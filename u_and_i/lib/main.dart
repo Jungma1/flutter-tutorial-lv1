@@ -1,20 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:u_and_i/screen/home_screen.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+  runApp(
+    MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'sunflower',
+        textTheme: const TextTheme(
+          displayLarge: TextStyle(
+            color: Colors.white,
+            fontFamily: 'parisienne',
+            fontSize: 80.0,
+          ),
+          displayMedium: TextStyle(
+            color: Colors.white,
+            fontSize: 50.0,
+            fontWeight: FontWeight.w700,
+          ),
+          bodyLarge: TextStyle(
+            color: Colors.white,
+            fontSize: 30.0,
+          ),
+          bodyMedium: TextStyle(
+            color: Colors.white,
+            fontSize: 20.0,
+          ),
         ),
       ),
-    );
-  }
+      home: const HomeScreen(),
+    ),
+  );
 }
