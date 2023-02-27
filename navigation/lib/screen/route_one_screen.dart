@@ -28,6 +28,12 @@ class RouteOneScreen extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
+            Navigator.of(context).maybePop();
+          },
+          child: const Text('Maybe Pop'),
+        ),
+        ElevatedButton(
+          onPressed: () {
             // 라우터는 스택으로 이루어져 있고, 순차적으로 쌓인다.
             Navigator.of(context).push(
               MaterialPageRoute(
