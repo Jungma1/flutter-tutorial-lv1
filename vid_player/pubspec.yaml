@@ -1,4 +1,4 @@
-name: video_player
+name: vid_player
 description: A new Flutter project.
 publish_to: 'none'
 version: 0.1.0
@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  video_player: ^2.5.2
+  image_picker: ^0.8.6+4
 
 dev_dependencies:
   flutter_test:
